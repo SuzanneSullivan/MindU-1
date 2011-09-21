@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/txtMedName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Medication Name:"/>
+    <EditText
+        android:id="@+id/txtEMedName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/txtMedName"/>
+    <TextView
+        android:id="@+id/txtMedPrecaution"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Precautions:"
+        android:layout_below="@id/txtEMedName"/>
+    <EditText
+    	android:id="@+id/txtEMedPrecaution"
+      	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:background="@android:drawable/editbox_background"
+      	android:layout_below="@id/txtMedPrecaution"/>    
+    <Button 
+    	android:text="Add Reminder" 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/btnAddReminder" 
+    	android:layout_width="wrap_content" 
+    	android:layout_below="@+id/txtEMedPrecaution" 
+    	android:layout_alignParentLeft="true"/>
+    <Button 
+    	android:text="Save" 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/btnSave" 
+    	android:layout_width="wrap_content" 
+    	android:layout_alignBaseline="@+id/btnAddReminder" 
+    	android:layout_alignBottom="@+id/btnAddReminder" 
+    	android:layout_toLeftOf="@+id/btnCancel" 
+    	android:layout_marginRight="20dp"/>    	
+	<Button 
+    	android:text="Cancel" 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/btnCancel" 
+    	android:layout_width="wrap_content" 
+    	android:layout_alignBaseline="@+id/btnSave" 
+    	android:layout_alignBottom="@+id/btnSave" 
+    	android:layout_alignParentRight="true" />
+</RelativeLayout>
+   
+    
+
